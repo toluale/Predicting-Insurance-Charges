@@ -18,8 +18,19 @@ The variable 'charges' is the target variable.
 
 
 The dataset requires some data cleaning and feature engineering to get a top predictive model.
+
 I develop a regression model using XGBoost to predict insurance charges for customers of different demographic. 
+
 The process involves exploratory data analysis, data cleaning techniques and feature engineering.
-The XGBoost model was trained using a 5-fold cross validation and the output was evaluated using R-Squared.
+
+Feature Engineering Steps Include:
+1. Created a category bin for age called age_group ['Child', 'Young Adult', 'Middle-Aged', 'Senior']
+2. Created a category bin for bmi called bmi_category ['Underweight', 'Normal', 'Overweight', 'Obese']
+3. Created a variable to capture the risk associated with smoking
+
+The XGBoost model was trained using a 5-fold cross validation. 
+
+The evaluation metric used is R-Squared.
+
 I calculated the models feature importance and identified that the engineered features contributed signifficantly to the model's performance.
 
