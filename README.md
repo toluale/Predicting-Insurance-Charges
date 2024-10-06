@@ -1,7 +1,10 @@
 # Predicting-Insurance-Charges
 This project combines predictive analytics with feature engineering in the healthcare/insurance domain.
+
 The task is to predict healthcare cost of customers for a Health Insurance Company.
+
 The variable 'charges' is the target variable.
+
 ## insurance.csv
 | Column    | Data Type | Description                                                      |
 |-----------|-----------|------------------------------------------------------------------|
@@ -12,6 +15,7 @@ The variable 'charges' is the target variable.
 | `smoker`    | object    | Indicates whether the beneficiary smokes (yes or no).            |
 | `region`    | object    | The beneficiary's residential area in the US, divided into four regions. |
 | `charges`   | float     | Individual medical costs billed by health insurance.             |
+
 
 The dataset requires some data cleaning and feature engineering to get a top predictive model.
 I develop a regression model using XGBoost to predict insurance charges for customers of different demographic. 
